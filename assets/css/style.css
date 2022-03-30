@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+    --intern-circle:#FF7164;
+    --text-line:#555555;
+    --circle-extern:#F2E0D5;
+    --white:#ffffff;
+    --start:#DBF495;
+    --background:#fffdf4;
+    --dark-red:#D96055;
+    --active-green:#6cb165;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  background:var(--background)
+}
+header {
+  display: flex;
+  margin: 2rem 4.5rem;
+}
+.container-logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.logo--title {
+  color:var(--intern-circle);
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#pomodoro {
+  width: 15%;
+}
+ul {
+  display: inline-flex;
+}
+li a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-line);
+  text-decoration: none;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.container-timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin:2rem;
+}
+
+.circle-intern{
+    fill: var(--intern-circle);
+    position: absolute;
+    stroke: var(--white);
+    stroke-width:0.5rem;
+}
+.circle-extern{
+    fill: var(--circle-extern);
+    stroke: var(--dark-red);
+    stroke-width:0.5rem;
+}
+.circle--timer{
+    position: absolute;
+    color: var(--white);
+    font-family: 'Karla', sans-serif;
+    font-size: 5.5rem;
+}
+.container-botao{
+    display:flex;
+    justify-content: center;
+}
+button{
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+    margin: 1rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 4px 5px #E5E5E5;
+    width: 30%;
+}
+.start{
+  background:var(--start);
+  color: var(--text-line);
+}
+.start:active{
+  background: var(--active-green)
+}
+.start:hover,.reset:hover{
+  opacity: 0.7;
+}
+.reset{
+  color: var(--text-line);
+}
+.reset:active{
+  background: var(--dark-red)
+}
+.personalize{
+  font-family:'Prompt', sans-serif;
+  background: var(--intern-circle);
+  color: var(--white);
+  padding: 1.5rem;
+  margin-top: 5rem;
+}
+h2{
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.personalize label {
+  font-size: 1.8rem;
+  display:inline;
+  align-self: end;
+  padding: 1.5rem;
+}
+.personalize input{
+  border-radius: 10px;
+  width:6rem;
+  height:6rem;
+  border: none;
+  font-size: 3rem;
+}
+.personal{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  height:20rem;
+}
+#focus{
+  grid-column: 1;
+  grid-row: 2;
+}
+#short-rest{
+  grid-column: 2;
+  grid-row: 2;
+}
+#long-rest{
+  grid-column: 3;
+  grid-row: 2;
+}
+footer{
+  margin:6rem 5rem 0 5rem;
+  font-size:0.8rem;
+  color:#c5c5c5;
+  text-align:center;
+}
