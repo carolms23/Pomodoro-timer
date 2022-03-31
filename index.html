@@ -43,13 +43,15 @@
                             height="416px">
                             <circle cx="208" cy="208" r="200" />
                             </svg>
-                            <p class="circle--timer">25:00</p>
+                            <p class="circle--timer">
+                                <span id="minutes">25</span>
+                                <span id="colon">:</span>
+                                <span id="seconds">00</span>
+                            </p>
                         </div>
                         <div class="container-botao">
-                            <button class="start" type="button"
-                                aria-label="botão de
-                                start">Começar</button>
-                            <button class="reset" type="reset">Resetar</button>
+                            <button class="start" id="start-stop" type="button">COMEÇAR</button>
+                            <button class="reset" type="reset">RESETAR</button>
                         </div>
                     </section>
                     <section class="to-do"></section>
@@ -67,11 +69,11 @@
                         </div>
                     </section>
 
-                </main>
-                <footer>
-                    <p>Code and design by Caroline Marques<p>
-                </footer>
+        </main>
+        <footer>
+            <p>Code and design by Caroline Marques<p>
+        </footer>
 
-                <script src="assets/js/"></script>
-            </body>
-        </html>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
